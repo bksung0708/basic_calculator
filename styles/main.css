@@ -1,27 +1,32 @@
 .calculator_display {
   background-color: black;
-  border: none;
   color: yellow;
-  padding: 20px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  width: 188px;
+  padding: 30px;
+  text-align: left;
+  font-size: 30px;
+  width: 189px;
+  height: 30px;
+  margin-left: 0.3px;
 }
 
-.deco {
+button {
+  width: 50px;
+  height: 60px;
   background-color: black;
-  border: none;
   color: white;
-  padding: 20px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 12px;
-  margin: 4px 2px;
+  margin-right: -4px;
+}
+
+button:hover {
+  background-color: blue;
 }
 
 #log_area {
+  margin-left: 0.5px;
   overflow: auto;
+  width: 243px;
+  height: 100px;
+  border: 3px solid black;
 }

@@ -3,43 +3,42 @@
     <link rel="stylesheet" type="text/css" href="/styles/main.css">
   </head>
   <body>
-    <p><strong>Calculator</strong></p>
+    <p><strong>BK's Calculator</strong></p>
     <div class="calculator">
-      <div class="calculator_display">0</div>
+      <div class="calculator_display"></div>
       <div class="calculator_keys">
-        <table>
-          <tr>
-            <td><button class="deco">7</button></td>
-            <td><button class="deco">8</button></td>
-            <td><button class="deco">9</button></td>
-            <td><button class="key--operator deco" data-action="divide">÷</button></td>
-          </tr>
-          <tr>
-            <td><button class="deco">4</button></td>
-            <td><button class="deco">5</button></td>
-            <td><button class="deco">6</button></td>
-            <td><button class="key--operator deco" data-action="multiply">&times;</button></td>
-            <td><button class="deco">(</button></td>
-          </tr>
-          <tr>
-            <td><button class="deco">1</button></td>
-            <td><button class="deco">2</button></td>
-            <td><button class="deco">3</button></td>
-            <td><button class="key--operator deco" data-action="subtract">-</button></td>
-            <td><button class="deco">)</button></td>
-          </tr>
-          <tr>
-            <td><button class="deco">0</button></td>
-            <td><button class="deco" data-action="decimal">.</button></td>
-            <td><button class="deco" data-action="clear">AC</button></td>
-            <td><button class="key--operator deco" data-action="add">+</button></td>
-            <td><button class="key--operator deco" data-action="calculate">=</td>
-            <td><button class="deco" data-action="log_clear">Clear</button></td>
-          </tr>
-        </table>
+        <div>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="key--operator" data-action="divide">÷</button>
+          <button data-action="log_clear">Clear</button>
+        </div>
+        <div>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="key--operator" data-action="multiply">&times;</button>
+          <button data-action="(">(</button>
+        </div>
+        <div>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="key--operator" data-action="subtract">-</button>
+          <button data-action=")">)</button>
+        </div>
+        <div>
+          <button>0</button>
+          <button data-action="decimal">.</button>
+          <button data-action="all_clear">AC</button>
+          <button class="key--operator" data-action="add">+</button>
+          <button class="key--operator" data-action="calculate">=</button>
+        </div>
       </div>
-      <div style="width:230px; height:100px; border:1px solid #000;" id="log_area"></div>
     </div>
+    <div id="log_area"></div>
+
     <script src="/scripts/index.js"></script>
   </body>
 </html>
